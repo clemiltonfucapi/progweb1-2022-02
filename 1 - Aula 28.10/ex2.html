@@ -1,0 +1,18 @@
+<!--Evento de clique em Javascript -->
+<input placeholder="Digite seu nome" id="nome">
+<button onclick="alerta()">Clique aqui!</button>
+
+<script>
+    var cont = 0 // cria uma variavel global
+    function alerta() {
+        console.log('clicou! ' + cont)
+        //recupera o elemento input com id nome
+        let input = document.getElementById('nome')
+        console.log(input)
+        //recupera o nome
+        let nome = input.value
+        alert('bem vindo ' + nome + '!')
+        cont = cont + 1
+
+    }
+</script>
