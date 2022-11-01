@@ -1,0 +1,45 @@
+<style>
+    .quadrado {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        display: inline-block;
+        margin: 0 10px;
+    }
+</style>
+<div class="quadrado" id="q1"></div>
+<div class="quadrado" id="q2"></div>
+<div class="quadrado" id="q3"></div><br>
+
+<select id="s1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+<select id="s2">
+    <option>Vermelho</option>
+    <option>Verde</option>
+    <option>Azul</option>
+</select>
+<button onclick="pintar()">Pintar</button>
+<script>
+    var s1 = document.getElementById('s1')
+    var s2 = document.getElementById('s2')
+    var q1 = document.getElementById('q1')
+    var q2 = document.getElementById('q2')
+    var q3 = document.getElementById('q3')
+
+    function pintar() {
+        let quadrado = s1.selectedOptions[0].innerHTML
+        let cor = s2.selectedOptions[0].innerHTML
+        console.log(quadrado, cor)
+        if (quadrado === '1' && cor === 'Vermelho')
+            pintarElemento(q1, 'red')
+        else if (quadrado === '1' && cor === 'Verde')
+            pintarElemento(q1, 'green')
+
+    }
+    function pintarElemento(elemento, cor) {
+        elemento.style.backgroundColor = cor
+    }
+</script>
