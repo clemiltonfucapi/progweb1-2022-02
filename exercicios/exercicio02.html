@@ -1,22 +1,55 @@
-<!--
-    Exercicio 02
-    Faça um script que ao clicar no botão calcular(onclick), leia o valor inserido pelo usuario
-e mostre uma tabuada dos valores e 1 até 10 no paragrafo
+<!DOCTYPE html>
+<html lang="pt-br">
 
-Obs: No codigo abaixo temos a utilização do for em js. É possivel realizar o exercicio com essa estrutura
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        body {
+            font: 12pt Arial;
+        }
 
--->
+        h1,
+        h2,
+        h3 {
+            font-family: 'Pacifico', cursive;
+            font-weight: normal;
+        }
 
-<h1>Tabuada</h1>
-<input type="number" placeholder="Digite um numero inteiro">
-<br>
+        button {
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
 
-<button>Calcular</button>
-<p>Resultado: </p>
-<script>
-    /* exemplo de for */
-    /*inicialização ; condição ; incremento  */
-    for (i = 1; i <= 10; i++) {
-        console.log(i)
-    }
-</script>
+<body>
+    <h1>Contador de cliques</h1>
+    <button onclick="contar()">Clique em mim</button>
+    <button onclick="zerar()">Zerar o contador</button>
+    <section id="result">
+        <p>O contador está com <mark>0</mark> cliques.</p>
+    </section>
+
+    <script>
+        //getElementById()
+        // element.innerHTML
+        var cont = 0
+
+        function contar() {
+            // soma +1 na variavel
+
+            // recuperar o elemento <mark>
+
+            // substituir o valor
+
+        }
+
+        function zerar() {
+
+        }
+    </script>
+</body>
+
+</html>
