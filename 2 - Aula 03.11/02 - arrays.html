@@ -1,0 +1,19 @@
+<script>
+    let pares = [2, 4, 6, 8]
+    console.log('PRIMEIRA FORMA')
+    for (let i = 0; i < pares.length; i++) {
+        console.log(pares[i])
+    }
+    console.log('SEGUNDA FOMRA')
+    for (let item of pares) {
+        console.log(item)
+    }
+    var soma = 0
+    console.log('forEach')
+    pares.forEach(function (elemento) {
+        console.log(elemento)
+        soma += elemento
+    })
+    console.log('A soma é: ' + soma)
+
+</script>

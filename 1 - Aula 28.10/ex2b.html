@@ -1,12 +1,10 @@
 <h1 id="contador">Contador: 0</h1> <br>
 <button onclick="adiciona()">Adicione +1</button>
-
 <script>
     var cont = 0;
     function adiciona() {
         if (cont < 10) {
             cont += 1
-            console.log(cont)
             //recuperar elemento h1
             let elContador = document.getElementById('contador');
             elContador.innerHTML = 'Contador: ' + cont;
@@ -14,7 +12,5 @@
         else {
             alert('Chegou no limite')
         }
-
     }
-
 </script>
