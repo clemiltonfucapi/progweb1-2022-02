@@ -8,11 +8,30 @@
     <br>
     <h3>Lista de Nomes: </h3>
     <ul id="listaNomes">
-        <li>José</li>
+        <li>José <button>X</button> </li>
     </ul>
 </body>
 <script>
+    function inserir() {
+        let input = document.querySelector('#inputNome')
+        let nome = input.value
+        //criar <li>
+        let li = document.createElement('li')
+        li.innerHTML = nome + ' '
+        // criar e inserir botao X
+        let btn = document.createElement('button')
+        btn.innerHTML = 'X'
+        li.appendChild(btn)
 
+
+        console.log(li)
+        //inserir o elemento na lista
+        document.querySelector('#listaNomes').appendChild(li)
+        input.value = ''
+    }
+    function limpar() {
+        document.querySelector('#listaNomes').innerHTML = ''
+    }
 </script>
 
 </html>

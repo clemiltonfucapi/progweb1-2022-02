@@ -11,9 +11,19 @@
     <p>Grifinória</p>
     <p>Sonserina</p>
     <p>Lufa-Lufa</p>
-    <button> Definir Cores</button>
+    <button onclick="definirCores()"> Definir Cores</button>
     <script>
-
+        function definirCores() {
+            let cores = ['blue', 'red', 'green', 'yellow']
+            //selecionar os paragrafos pela tag
+            let paragrafos = document.getElementsByTagName('p')
+            for (i = 0; i < paragrafos.length; i++) {
+                //selecionar o paragrafo
+                let p = paragrafos[i]
+                // mudar a cor de fundo do paragrafo
+                p.style.backgroundColor = cores[i]
+            }
+        }
     </script>
 </body>
 

@@ -14,7 +14,15 @@
         <p class="texto">2º paragrafo</p>
         <p class="texto">3º paragrafo</p>
     </div>
-    <button onclick="">Mudar 2º paragrafo</button>
+    <button onclick="mudar()">Mudar 2º paragrafo</button>
 </body>
+<script>
+    function mudar() {
+        const div = document.getElementsByClassName('caixa')[0]
+        console.log(div)
+        div.getElementsByClassName('texto')[1]
+            .style.fontSize = '24px'
+    }
+</script>
 
 </html>
