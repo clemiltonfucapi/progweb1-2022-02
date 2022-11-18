@@ -1,50 +1,40 @@
-<!-- Considere a pagina -->
-
 <!DOCTYPE html>
-<html>
+<!--
+Escreva um código JS necessário para realizar as seguintes tarefas:
 
-<style>
-    table {
-        margin: 10px
-    }
-
-    table,
-    th,
-    td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-</style>
+1) Selecionar a seção com o id="container" utilizando querySelector
+2) Selecionar todas os list item(<li>) que tem a classe "second"
+3) Selecionar todos os list item(<li>) com a classe "third", mas somente aqueles que estão dentro de uma tag <ol>
+4) Adicionar um texto na seção "container" com o texto "Olá mundo!"
+5) Adicionar a classe "main" na div que tem classe "footer". Dica: Usar a função classList.add()
+6) Remover a classe "main" na div que tem a classe "footer". Dica: usarr a função classList.remove()
+7) Criar um novo elemento <li>, com a classe "fourth" e texto "fourth". Adicionar esse <li> na tag <ol>
+8) Pintar a cor de fundo de todos os <li> para cor verde
+-->
+<html lang="en">
 
 <head>
-    <meta charset=utf-8 />
-    <title>Exercicio 7</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
 
 <body>
-
-    Nome: <input type="text" name="nome"><br>
-    Sobrenome: <input type="text" name="sobrenome"><br>
-    <button> Enviar</button>
-
-    <br>
-
-    <table>
-        <thead>
-            <th>Nome</th>
-            <th>Sobrenome</th>
-            <th>Ação</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Caio</td>
-                <td>Lopes</td>
-                <td> <button>X</button> </td>
-            </tr>
-        </tbody>
-    </table>
-
-
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
 </body>
 
 </html>
